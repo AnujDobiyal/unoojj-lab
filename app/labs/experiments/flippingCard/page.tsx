@@ -1,6 +1,5 @@
 "use client";
 
-import { ReactLenis } from "lenis/dist/lenis-react.mjs";
 import { Container } from "@/components/container";
 import {
   AnimatePresence,
@@ -92,7 +91,6 @@ const FlippingCardPage = () => {
 
   return (
     <div className="bg-zinc-100">
-      <ReactLenis root options={{ lerp: 0.08, smooth: true }}>
         <Container className="border-x-4 flex gap-4 border-x-black pl-6 pr-8">
           <div className="w-28">
             <FlippingCard
@@ -150,7 +148,6 @@ const FlippingCardPage = () => {
             </SectionCard>
           </div>
         </Container>
-      </ReactLenis>
     </div>
   );
 };
