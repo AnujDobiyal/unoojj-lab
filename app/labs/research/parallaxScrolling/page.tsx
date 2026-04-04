@@ -1,5 +1,4 @@
 "use client";
-import { ReactLenis } from "lenis/dist/lenis-react.mjs";
 
 import {
   motion,
@@ -13,11 +12,9 @@ import { useRef } from "react";
 const ParallaxScrollingPage = () => {
   return (
     <div>
-      <ReactLenis root options={{lerp: 0.05, infinite: true}}>
         <Nav />
         <Hero />
         <div className="h-screen"></div>
-      </ReactLenis>
     </div>
   );
 };
