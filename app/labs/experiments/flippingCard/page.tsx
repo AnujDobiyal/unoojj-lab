@@ -99,7 +99,7 @@ const FlippingCardPage = () => {
               activeId={activeId}
             />
 
-            <nav className="fixed bottom-2 w-28 flex flex-col gap-2 items-center py-4 mask-b-from-98%">
+            <nav className="fixed bottom-2 w-18 flex flex-col gap-2 items-center py-4 mask-b-from-98%">
               {navLinks.map((link) => (
                 <Btn key={link.id} onClick={() => scrollTo(link.id)}>
                   {link.label}
@@ -263,7 +263,7 @@ const Btn = ({
 }) => {
   return (
     <button
-      className="block cursor-pointer h-8 w-18 text-sm bg-white text-neutral-700 hover:text-neutral-950 border border-neutral-950 hover:scale-105 shadow-[4px_4px_rgba(0,0,0,0.85)]"
+      className="block cursor-pointer h-8 w-16 text-sm bg-white text-neutral-700 hover:text-neutral-950 border border-neutral-950 hover:scale-105 shadow-[4px_4px_rgba(0,0,0,0.85)]"
       onClick={onClick}
     >
       {children}
