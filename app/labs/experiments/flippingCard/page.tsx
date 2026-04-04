@@ -91,8 +91,8 @@ const FlippingCardPage = () => {
 
   return (
     <div className="bg-zinc-100">
-        <Container className="border-x-4 flex gap-4 border-x-black pl-6 pr-8">
-          <div className="w-28">
+        <Container className="border-x-4 flex gap-4 border-x-black pl-6 pr-8 py-8">
+          <div className="w-18 md:w-28">
             <FlippingCard
               footerTop={footerTop}
               fixedRef={fixedRef}
@@ -163,7 +163,7 @@ const FlippingCard = ({
 }) => {
   return (
     <motion.div
-      className="w-28 h-16 fixed z-10 perspective-distant shadow-[4px_4px_rgba(0,0,0,0.85)]"
+      className="w-18 h-16 fixed z-10 perspective-distant shadow-[4px_4px_rgba(0,0,0,0.85)]"
       transition={{
         duration: 0.4,
         ease: "easeOut",
@@ -194,7 +194,7 @@ const FlippingCard = ({
               duration: 0.67,
               ease: "easeOut",
             }}
-            className="absolute z-10 inset-0 border border-black bg-white origin-top text-black flex items-center justify-center font-bold text-2xl"
+            className="absolute z-10 inset-0 border border-black bg-white origin-top text-black flex items-center justify-center font-bold text-xl md:text-2xl"
           >
             {word}
           </motion.div>
@@ -235,7 +235,7 @@ const SectionTitle = ({
 }) => {
   return (
     <div className={cn("border-b-2 border-black", className)}>
-      <h1 className="font-bold text-2xl px-9 py-5 z-200 text-white">{title}</h1>
+      <h1 className="font-bold text-xl md:text-2xl px-9 py-5 z-200 text-white">{title}</h1>
     </div>
   );
 };
