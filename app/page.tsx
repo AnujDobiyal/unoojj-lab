@@ -28,7 +28,7 @@ export default function Home() {
           .map((link) => (
             <Link
               key={link.href}
-              href={`${link.tag}/${link.href}`}
+              href={`labs/${link.tag}/${link.href}`}
               className="ml-10 text-neutral-400 hover:text-neutral-200"
             >
               {link.name}
