@@ -92,7 +92,7 @@ const FlippingCardPage = () => {
   return (
     <div className="bg-zinc-100">
         <Container className="border-x-4 flex gap-4 border-x-black pl-6 pr-8 py-8">
-          <div className="w-18 md:w-28">
+          <div className="w-28">
             <FlippingCard
               footerTop={footerTop}
               fixedRef={fixedRef}
@@ -263,7 +263,7 @@ const Btn = ({
 }) => {
   return (
     <button
-      className="block cursor-pointer h-8 w-16 text-sm bg-white text-neutral-700 hover:text-neutral-950 border border-neutral-950 hover:scale-105 shadow-[4px_4px_rgba(0,0,0,0.85)]"
+      className="block cursor-pointer h-8 w-18 text-sm bg-white text-neutral-700 hover:text-neutral-950 border border-neutral-950 hover:scale-105 shadow-[4px_4px_rgba(0,0,0,0.85)]"
       onClick={onClick}
     >
       {children}
